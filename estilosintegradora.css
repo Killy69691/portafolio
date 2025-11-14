@@ -1,0 +1,109 @@
+/* Fondo de la página con degradado diagonal */
+body {
+  margin: 0; /* Elimina márgenes por defecto del navegador */
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Degradado de fondo diagonal */
+  color: #ffffff; /* Color del texto en general (blanco) */
+}
+
+/* Encabezado (título + menú) */
+header {
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espaciado interno */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente negro */
+}
+
+header h1 {
+  margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none; /* Quita los puntos de lista */
+  padding: 0; /* Quita el espacio interno */
+  display: flex; /* Usa flexbox para alinear elementos */
+  justify-content: center; /* Centra los elementos en horizontal */
+  gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Enlaces del menú */
+nav a {
+  color: #fff; /* Color blanco */
+  text-decoration: none; /* Sin subrayado */
+  font-weight: bold; /* Negrita */
+}
+
+nav a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+/* Sección de bienvenida/descripción */
+.descripcion {
+  text-align: center; /* Centra el texto */
+  padding: 30px 20px; /* Espaciado interno arriba/abajo y a los lados */
+  max-width: 700px; /* Máximo ancho del texto */
+  margin: auto; /* Centra horizontalmente */
+}
+
+/* Contenedor de todas las tarjetas */
+.contenedor-proyectos {
+  display: flex; /* Flexbox para ordenar las tarjetas */
+  flex-wrap: wrap; /* Permite que bajen a otra línea si no entran */
+  justify-content: center; /* Centra las tarjetas */
+  gap: 20px; /* Espacio entre tarjetas */
+  padding: 20px; /* Espacio interno general */
+}
+
+/* Estilo individual de cada tarjeta */
+.tarjeta {
+  background-color: #ffffff10; /* Fondo blanco muy transparente */
+  border: 1px solid #ffffff30; /* Borde blanco translúcido */
+  border-radius: 10px; /* Bordes redondeados */
+  max-width: 300px; /* Ancho máximo */
+  padding: 15px; /* Espacio interno */
+  text-align: center; /* Centra el contenido de texto */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3); /* Sombra alrededor */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque detrás (cristalino) */
+}
+
+/* Imagen dentro de la tarjeta */
+.tarjeta img {
+  width: 100%; /* Imagen ocupa todo el ancho de la tarjeta */
+  border-radius: 5px; /* Bordes redondeados */
+  height: auto; /* Mantiene proporciones */
+}
+
+/* Título dentro de la tarjeta */
+.tarjeta h2 {
+  color: #fff; /* Color blanco */
+}
+
+/* Texto dentro de la tarjeta */
+.tarjeta p {
+  font-size: 14px; /* Tamaño de letra más pequeño */
+  color: #ddd; /* Gris claro */
+}
+
+/* Botón dentro de la tarjeta */
+.tarjeta button {
+  margin-top: 10px; /* Espacio arriba del botón */
+  padding: 10px; /* Espacio interno */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #0066cc; /* Azul fuerte */
+  color: white; /* Texto blanco */
+  cursor: pointer; /* Cursor de mano */
+}
+
+/* Efecto al pasar el mouse por el botón */
+.tarjeta button:hover {
+  background-color: #004d99; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+  text-align: center; /* Centra el texto */
+  padding: 20px; /* Espacio interno */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente negro */
+  margin-top: 30px; /* Separación superior del resto de la página */
+}
